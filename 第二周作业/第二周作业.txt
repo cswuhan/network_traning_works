@@ -1,0 +1,43 @@
+一、判断题
+
+Java 是编译型语言。      答：错，Java是解释型语言。
+Javascript 中，不区分大小写字母，也就是说 A 和 a 是同一个变量。   答：错，Javascript对大小写敏感，区分大小写。
+Javascript 中的常量包括 String、Number、Boolean、Null、Undefined。   答：对
+String 字符串的语法中既可以使用单引号，也可以使用双引号。    答：对
+typeof 是用来判断变量类型，不可以当作运算符使用。     答：typeof 是用来判断变量类型，但是也可也充当运算符。
+任何值和 undefined 运算，undefined 可看做 0 运算。     答：错，任何值和 undefined 运算都是undefined。
+二、请分别描述下列代码中“+”的作用。
+
+console.log(“年龄:” + 20);   答：连字符，将字符串和数字连接在一起打印输出。
+console.log(11+22+33);       答：是运算符号加号，将三个数字相加。
+console.log(“网络 + 安全”);   答：在双引号中的加号，是字符串，被输出时以原字符加号输出。
+var a = 1;
+var b = 2;
+console.log(“a” + b);        答：将字符串“a”转换为数字1，然后与变量b的值相加，在控制台显示输出2。
+var a = 1;
+var b = 2;
+console.log(“a + b”);        答：加号在括号中作为字符串，此时控制台输出的是a + b
+三、计算下述代码的打印值
+var a = 10;               											 a       b
+var b = 10;               							 				 10      10
+console.log(a++);     /10  a先打印输出后自增，此时会打印10  			 11		 10
+console.log(++a);     /12  a先自增后输出，此时会打印12                 12      10
+console.log(–b);      /-10  -b指的是在值前面加个负号              
+console.log(b–);	  /报错，不存在这种运算
+
+四、分别使用行内式、内嵌式、引入外部文件的方法造成网页弹窗，要求触发弹窗的 JavaScript 命令不止一种（alert、print、prompt）。
+行内式：
+
+我新建了三个文件，分别命名为行内式、内嵌式、引入外部文件，里面有index.html，各自使用了文件名的方式实现各种弹窗效果。
+
+五、安装 Docker 并练习以下基础命令、帮助命令、镜像命令和容器命令:
+
+帮助命令
+docker 命令 --help
+镜像命令
+docker images 列出所有镜像
+docker search 搜索镜像
+docker pull 下载镜像
+docker rmi 删除镜像
+
+在阿里云用大学生亲戚的优惠试用了云服务器，通过xshell连接到服务器，修改了root密码，已经实现docker安装。
